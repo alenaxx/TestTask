@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/White">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,14 +14,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="492dp"
+            android:layout_height="418dp"
             android:orientation="vertical">
 
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="406dp"
+                android:layout_height="349dp"
                 android:layout_weight="1"
                 android:scrollbars="vertical" />
 
@@ -32,6 +33,8 @@
                 android:layout_gravity="center"
                 android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/count"
+                android:textColorHint="@color/colorPrimary"
                 android:inputType="number" />
 
             <Button
@@ -39,7 +42,9 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/reload" />
+                android:text="@string/reload"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/White"/>
 
         </LinearLayout>
 
@@ -50,18 +55,25 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/jokebtn"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Jokes" />
+                android:text="Jokes"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/White"
+                android:outlineProvider="bounds"
+                />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/webbtn"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Web" />
+                android:text="Web"
+                android:background="@color/White"
+                android:outlineProvider="bounds"
+                />
         </LinearLayout>
 
     </LinearLayout>

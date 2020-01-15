@@ -31,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:ems="10"
+                android:hint="Count"
                 android:inputType="number" />
 
             <Button
@@ -38,7 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/reload" />
+                android:text="@string/reload"
+                style="@color/colorPrimaryDark"/>
 
         </LinearLayout>
 
@@ -53,14 +55,16 @@
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Jokes" />
+                android:text="Jokes"
+                android:background="@color/colorPrimaryDark"/>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Web" />
+                android:text="Web"
+                android:background="@color/colorPrimary"/>
         </LinearLayout>
 
     </LinearLayout>

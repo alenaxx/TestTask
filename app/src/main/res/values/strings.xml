@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestTask</string>
-    <string name="count">count</string>
+    <string name="app_name">Jokes</string>
+    <string name="count">Count</string>
     <string name="reload">RELOAD</string>
 </resources>
