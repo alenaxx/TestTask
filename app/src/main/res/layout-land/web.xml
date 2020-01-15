@@ -13,7 +13,7 @@
         <WebView
             android:id="@+id/webviw"
             android:layout_width="match_parent"
-            android:layout_height="548dp" />
+            android:layout_height="326dp" />
 
 
         <LinearLayout

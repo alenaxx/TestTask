@@ -22,6 +22,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public int i;
     public int count;
     private RequestQueue mQueue;
+    public  String SavedJokes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         webBtn = (Button) findViewById(R.id.webbtn);
         mQueue = Volley.newRequestQueue(this);
         textView.setMovementMethod(new ScrollingMovementMethod());
+
+
 
         webBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+
     }
 
     private void jsonParse(final int i, final String[] jokeList) {
@@ -105,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
                                 for (int i = 0; i < count; i++)
                                     textView.append("\n" + (i + 1) + ". " + jokeList[i] + "\n");
 
+
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -120,4 +128,6 @@ public class MainActivity extends AppCompatActivity {
         });
         mQueue.add(request);
     }
+
+
 }

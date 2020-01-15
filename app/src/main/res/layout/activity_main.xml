@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,15 +13,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="338dp"
+            android:layout_height="418dp"
             android:orientation="vertical">
 
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="235dp"
-                android:scrollbars="vertical" />
+                android:layout_width="427dp"
+                android:layout_height="442dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                />
 
 
             <EditText
@@ -30,17 +31,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:autofillHints=""
                 android:ems="10"
-                android:hint="Count"
+                android:hint="@string/count"
+                android:textColorHint="@color/colorPrimary"
                 android:inputType="number" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="match_parent"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/reload"
-                style="@color/colorPrimaryDark"/>
+                android:background="@color/colorPrimary"
+                android:textColor="@color/White"/>
 
         </LinearLayout>
 
@@ -51,20 +55,25 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/jokebtn"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jokes"
-                android:background="@color/colorPrimaryDark"/>
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/White"
+                android:outlineProvider="bounds"
+                />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/webbtn"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Web"
-                android:background="@color/colorPrimary"/>
+                android:background="@color/White"
+                android:outlineProvider="bounds"
+                />
         </LinearLayout>
 
     </LinearLayout>

@@ -14,14 +14,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="511dp"
+            android:layout_height="418dp"
             android:orientation="vertical">
 
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="349dp"
                 android:layout_weight="1"
                 android:scrollbars="vertical" />
 
@@ -34,23 +34,23 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/count"
-                android:inputType="number"
-                android:textColorHint="@color/colorPrimary" />
+                android:textColorHint="@color/colorPrimary"
+                android:inputType="number" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@color/colorPrimary"
                 android:text="@string/reload"
-                android:textColor="@color/White" />
+                android:background="@color/colorPrimary"
+                android:textColor="@color/White"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -59,7 +59,7 @@
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/jokes"
+                android:text="Jokes"
                 android:textColor="@color/colorPrimaryDark"
                 android:background="@color/White"
                 android:outlineProvider="bounds"
@@ -70,7 +70,7 @@
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/web"
+                android:text="Web"
                 android:background="@color/White"
                 android:outlineProvider="bounds"
                 />
