@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="count">count</string>
+    <string name="reload">RELOAD</string>
+</resources>
